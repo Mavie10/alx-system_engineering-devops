@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-##!/bin/bash
 
 # 67-stop_me_if_you_can script
 
@@ -19,4 +18,3 @@ then
 else
     echo "7-highlander process is not running."
 fi
-
