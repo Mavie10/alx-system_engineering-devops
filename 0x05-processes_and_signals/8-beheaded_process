@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Script to kill the 7-highlander process
+
+# Check if the process is running
+if pgrep -x "7-highlander" > /dev/null
+then
+    echo "Stopping 7-highlander process..."
+    
+    pkill -f "7-highlander"
+    
+    echo "Process stopped successfully."
+else
+    echo "7-highlander process is not running."
+fi

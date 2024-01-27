@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+##!/bin/bash
+
+# 67-stop_me_if_you_can script
+
+# Function to display the invincible message and exit
+invincible_message() {
+    echo "I am invincible!!!"
+    exit
+}
+
+trap 'invincible_message' SIGTERM
+
+if pgrep -x "7-highlander" > /dev/null
+then
+    echo "Stopping 7-highlander process..."
+    pkill -f "7-highlander"
+    echo "Process stopped successfully."
+else
+    echo "7-highlander process is not running."
+fi
+
