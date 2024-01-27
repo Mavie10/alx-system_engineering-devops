@@ -3,4 +3,4 @@
 # Script to display a list of currently running processes
 
 # Use 'ps' command with options to show all processes for all users, with process hierarchy
-ps auxf
+ps aux --forest
